@@ -3,12 +3,18 @@ import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 
-export default defineConfig(({ command }) => {
+export default defineConfig(({ command, mode }) => {
+  const isVercel = process.env.VERCEL === '1';
+
   return {
+    base: isVercel ? '/' : '/portfolio-jefferson-project/',
+
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+
     root: 'src',
+
     build: {
       sourcemap: true,
 
@@ -23,8 +29,10 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'assets/[name].js',
         },
       },
+
       outDir: '../dist',
     },
+
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
   };
 });
