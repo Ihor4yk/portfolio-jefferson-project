@@ -18,6 +18,7 @@ Key achievement: implemented dynamic modal logic and optimized JS component inte
   <li>API interaction</li>
   <li>Component-based JS architecture</li>
   <li>Vite</li>
+  <li>Vercel</li>
 </ul>
 
 <h2>✨Features:</h2>
