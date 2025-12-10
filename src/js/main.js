@@ -1,3 +1,4 @@
+import '../css/styles.css';
 import { getReviwes } from './apisRequest.js';
 import { renderReviews } from './renderFunctions.js';
 // import { updateButtons } from "./swiper.js";
