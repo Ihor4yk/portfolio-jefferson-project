@@ -1,7 +1,7 @@
 <h1>💼Portfolio-Jefferson</h1>
 
 <h2>📄Description</h2>
-<p>A responsive and visually appealing personal portfolio website designed to showcase a developer’s professional skills, experience, and projects.
+<p>Responsive and visually appealing personal portfolio website designed to showcase a developer’s professional skills, experience, and projects.
 I was responsible for developing the footer section, implementing dynamic modal window logic, and partially connecting API requests to the backend. I also contributed to maintaining and improving the JavaScript architecture for individual sections, ensuring smooth interaction between UI components and user actions.
 <br>
 Type: team project
